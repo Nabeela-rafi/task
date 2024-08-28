@@ -1,0 +1,29 @@
+
+  
+  .view-tabs {
+    margin: 20px 0;
+  }
+  
+  .tab-button {
+    background-color: white;
+    border: 1px solid #e7f0dd;
+    border-radius: 5px;
+    padding: 7px 14px;
+    color: #3f996f;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-button.active {
+    background-color: #3f996f;
+    color: #fff;
+    border-color: #3f996f;
+  }
+  
+  .tab-button:hover {
+    background-color: #3f996f;
+    color: white;
+  }
+  

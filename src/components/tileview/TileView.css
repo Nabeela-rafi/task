@@ -1,0 +1,68 @@
+/* src/components/tileview/TileView.css */
+.tile-view-container {
+    padding: 20px;
+  }
+  
+  .user-tile {
+    border: 1px solid #ddd;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  
+  .user-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .user-tile img {
+    max-height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .actions-button {
+    margin-top: 10px;
+    color: #fff;
+    border: #e7f0dd;
+    background-color: #3f996f;
+    border-radius: none;
+  }
+
+  .actions-button:hover {
+    margin-top: 10px;
+    color: #fff;
+    border: #e7f0dd;
+    background-color: #3f996f;
+  }
+
+  
+  .actions-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .action-item {
+    width: 100%;
+  }
+  
+  .modal-body img {
+    max-width: 100%;
+  }
+  

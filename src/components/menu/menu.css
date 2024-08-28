@@ -1,0 +1,44 @@
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3f996f;
+  }
+  
+  .hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu-items {
+    display: none;
+  }
+  
+  .menu-items.open {
+    display: block;
+  }
+  
+  .menu-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .menu-items li {
+    margin: 0 10px;
+  }
+  
+  .menu-items a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-items a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Menu from './components/menu/Menu';
+import GridView from './components/gridview/GridView';
+import TileView from './components/tileview/TileView';
+import TabButtons from './components/tabs/TabButtons';
 
 function App() {
+  const [view, setView] = useState('grid'); // 'grid' or 'tile'
+
+  const handleViewChange = (viewType) => {
+    setView(viewType);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu />
+      <TabButtons view={view} onViewChange={handleViewChange} />
+      {view === 'grid' ? <GridView /> : <TileView />}
     </div>
   );
 }
